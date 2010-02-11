@@ -1,13 +1,29 @@
-Premailer
+premailer-rails
 =========
 
-Introduction goes here.
+This plugin allows you to write HTML emails properly (i.e. using proper CSS) and uses Alex Dunae's premailer to convert the emails to inlined HTML suitable for all major email clients.
 
 
 Example
 =======
 
-Example goes here.
+in RAILS_ROOT/app/models/notifications.rb:
+
+	def some_mail(args)
+		subject    args.delete(:subject)
+		recipients args.delete(:recipient)
+		from       args.delete(:from)
+		sent_on    Time.now
+		
+		body       args
+		
+		premail
+	end
+
+This mail can now be written a standard HTML document using CSS linked in, using partials etc (as in any other view on your site). It should be at app/views/notifications/some_mail.text.html.erb. 
+
+Premailer will then prepare an inlined version of the view whenever a email is sent.
 
 
-Copyright (c) 2009 [name of plugin creator], released under the MIT license
+Copyright (c) 2009 Tom Coleman, released under the MIT license
+Using code from the premailer project by Alex Dunae (http://code.dunae.ca/premailer.web/).
