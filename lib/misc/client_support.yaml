@@ -1,0 +1,185 @@
+# Capabilities of e-mail clients
+#
+# Sources
+# * http://www.campaignmonitor.com/blog/archives/2007/04/a_guide_to_css_support_in_emai_2.html
+# * http://www.campaignmonitor.com/blog/archives/2007/11/do_image_maps_work_in_html_ema.html
+# * http://www.campaignmonitor.com/blog/archives/2007/11/how_forms_perform_in_html_emai.html
+# * http://www.xavierfrenette.com/articles/css-support-in-webmail/
+# * http://www.email-standards.org/
+# Updated 2007-11-28
+#
+# Support: 1 = SAFE,  2 = POOR,  3 = RISKY
+elements:
+  map:
+    support: 2
+    unsupported_in: [Gmail]
+  area:
+    support: 2
+    unsupported_in: [Gmail]
+  form:
+    support: 3
+    unsupported_in: [dotMac, Old Yahoo, AOL, Live Mail, Outlook 07, Outlook 03]
+  link:
+    support: 2
+    unsupported_in: [Gmail, Hotmail, Old Yahoo]
+attributes:
+  ismap:
+    support: 2
+    unsupported_in: [Gmail]
+css_properties:
+  background-color:
+    support: 2
+    unsupported_in: [Notes 6, Eudora, dotMac]
+  background-image:
+    support: 3
+    unsupported_in: [Outlook 07, Gmail, Live Mail, Notes 6, Eudora, dotMac]
+  background-image-position:
+    support: 3
+    unsupported_in: [Outlook 07, Gmail, Live Mail, Notes 6, Eudora, dotMac]
+  background-repeat:
+    support: 3
+    unsupported_in: [Outlook 07, Gmail, Live Mail, Notes 6, Eudora]
+  background-position:
+    support: 3
+    unsupported_in: [Old Yahoo, Outlook 07, Gmail, Live Mail, Hotmail, Notes 6, Eudora]
+  border: &border_shorthand
+    support: 2
+    unsupported_in: [Notes 6, Eudora]
+  border-bottom: *border_shorthand
+  border-left: *border_shorthand
+  border-right: *border_shorthand
+  border-top: *border_shorthand
+  border-collapse:
+    support: 3
+    unsupported_in: [Entourage, Notes 6, Eudora]
+  border-spacing:
+    support: 3
+    unsupported_in: [Outlook 03, Outlook 07, Live Mail, Entourage, Hotmail, Notes 6, Eudora]
+  bottom:
+    support: 3
+    unsupported_in: [New Yahoo, AOL, Outlook 07, Gmail, Live Mail, Notes 6, Eudora]
+  caption-side:
+    support: 3
+    unsupported_in: [Outlook 03, New Yahoo, AOL, Outlook 07, Mac Mail, Entourage, Hotmail, Notes 6, Eudora]
+  clear:
+    support: 3
+    unsupported_in: [Outlook 07, Notes 6, Eudora, dotMac]
+  clip:
+    support: 3
+    unsupported_in: [New Yahoo, Outlook 07, Live Mail, Notes 6, Eudora]
+  color:
+    support: 1
+    unsupported_in: [Eudora, dotMac]
+  cursor:
+    support: 3
+    unsupported_in: [Outlook 07, Gmail, Entourage, Notes 6, Eudora]
+  direction:
+    support: 3
+    unsupported_in: [Outlook 07, Entourage, Eudora]
+  display:
+    support: 2
+    unsupported_in: [Outlook 07, Eudora]
+  empty-cells:
+    support: 3
+    unsupported_in: [Outlook 03, AOL, Outlook 07, Entourage, Hotmail, Notes 6, Eudora]
+  font-size:
+    support: 1
+    unsupported_in: [Eudora, dotMac]
+  font-style:
+    support: 1
+    unsupported_in: [Eudora, dotMac]
+  font-weight:
+    support: 1
+    unsupported_in: [Eudora, dotMac]
+  font-family:
+    support: 2
+    unsupported_in: [Gmail, Eudora, dotMac]
+  font-variant:
+    support: 2
+    unsupported_in: [Notes 6, Eudora, dotMac]
+  float:
+    support: 3
+    unsupported_in: [Outlook 07, Gmail, Eudora, dotMac]
+  height:
+    support: 3
+    unsupported_in: [Outlook 07, Gmail, Notes 6, Eudora, dotMac]
+  left:
+    support: 3
+    unsupported_in: [New Yahoo, Outlook 07, Gmail, Live Mail, Notes 6, Eudora]
+  letter-spacing:
+    support: 2
+    unsupported_in: [Notes 6, Eudora]
+  line-height:
+    support: 2
+    unsupported_in: [Notes 6, Eudora, dotMac]
+  list-style-image:
+    support: 3
+    unsupported_in: [Outlook 07, Gmail, Live Mail, Notes 6, Eudora, dotMac]
+  list-style-position:
+    support: 3
+    unsupported_in: [Old Yahoo, Outlook 07, Hotmail, Notes 6, Eudora]
+  list-style-type:
+    support: 3
+    unsupported_in: [Outlook 07, Live Mail, Hotmail, Eudora]
+  margin: &margin_shorthand
+    support: 3
+    unsupported_in: [AOL, Live Mail, Hotmail, Notes 6, Eudora, dotMac]
+  margin-bottom: *margin_shorthand
+  margin-left: *margin_shorthand
+  margin-right: *margin_shorthand
+  margin-top: *margin_shorthand
+  opacity:
+    support: 3
+    unsupported_in: [Outlook 03, New Yahoo, Outlook 07, Gmail, Live Mail, Entourage, Hotmail, Notes 6, Eudora]
+  overflow:
+    support: 3
+    unsupported_in: [Outlook 07, Entourage, Notes 6, Eudora]
+  padding: &padding_shorthand
+    support: 2
+    unsupported_in: [Notes 6, Eudora, dotMac]
+  padding-bottom: *padding_shorthand
+  padding-left: *padding_shorthand
+  padding-right: *padding_shorthand
+  padding-top: *padding_shorthand
+  position:
+    support: 3
+    unsupported_in: [New Yahoo, Old Yahoo, Outlook 07, Gmail, Live Mail, Hotmail, Notes 6, Eudora]
+  table-layout:
+    support: 2
+    unsupported_in: [Notes 6, Eudora]
+  text-align:
+    support: 1
+    unsupported_in: [Eudora]
+  text-decoration:
+    support: 1
+    unsupported_in: [Eudora]
+  text-indent:
+    support: 2
+    unsupported_in: [Notes 6, Eudora]
+  text-transform:
+    support: 2
+    unsupported_in: [Notes 6, Eudora]
+  top:
+    support: 3
+    unsupported_in: [New Yahoo, Outlook 07, Gmail, Live Mail, Notes 6, Eudora]
+  right:
+    support: 3
+    unsupported_in: [New Yahoo, Outlook 07, Gmail, Live Mail, Notes 6, Eudora]
+  vertical-align:
+    support: 3
+    unsupported_in: [Outlook 07, Notes 6, Eudora]
+  visibility:
+    support: 3
+    unsupported_in: [Outlook 07, Gmail, Notes 6, Eudora]
+  white-space:
+    support: 3
+    unsupported_in: [Outlook 03, AOL, Notes 6, Eudora]
+  width:
+    support: 3
+    unsupported_in: [Outlook 07, Notes 6, Eudoram, dotMac]
+  word-spacing:
+    support: 3
+    unsupported_in: [Outlook 07, Notes 6, Eudora]
+  z-index:
+    support: 3
+    unsupported_in: [New Yahoo, Gmail, Live Mail, Notes 6, Eudora]
